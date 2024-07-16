@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"541b9262fc2914e5","x":-593,"y":-266,"width":250,"height":60,"type":"text","text":"Schema 1 Event Bus"},
+		{"id":"91ffbf200d31cd91","x":-206,"y":-253,"width":250,"height":60,"type":"text","text":"Schema 1 Kinesis Stream"},
+		{"id":"354888ce82ab23ee","x":186,"y":-199,"width":250,"height":60,"type":"text","text":"ECS Service"},
+		{"id":"19905b20469592aa","x":570,"y":-105,"width":250,"height":60,"type":"text","text":"Kinesis Stream"},
+		{"id":"a327ab852e34bae2","type":"text","text":"Schema 2 Event Bus","x":-593,"y":-45,"width":250,"height":60},
+		{"id":"5f18bc50e4a5f3d3","x":-217,"y":-70,"width":250,"height":60,"type":"text","text":"Schema 2 Kinesis Stream"},
+		{"id":"c724f8ccd03b7ada","x":147,"y":-60,"width":250,"height":60,"type":"text","text":"Lambda"},
+		{"id":"77f79cfde63759fd","x":904,"y":-102,"width":250,"height":60,"type":"text","text":"OpenSearch Cluster"}
+	],
+	"edges":[
+		{"id":"3182fbf1cd06415c","fromNode":"541b9262fc2914e5","fromSide":"right","toNode":"91ffbf200d31cd91","toSide":"left"},
+		{"id":"c134684ed02eda5c","fromNode":"91ffbf200d31cd91","fromSide":"right","toNode":"354888ce82ab23ee","toSide":"left"},
+		{"id":"8a03e588e852786d","fromNode":"354888ce82ab23ee","fromSide":"right","toNode":"19905b20469592aa","toSide":"left"},
+		{"id":"191e7f1c799585b7","fromNode":"a327ab852e34bae2","fromSide":"right","toNode":"5f18bc50e4a5f3d3","toSide":"left"},
+		{"id":"1977f5689465e0af","fromNode":"5f18bc50e4a5f3d3","fromSide":"right","toNode":"c724f8ccd03b7ada","toSide":"left"},
+		{"id":"4164b1cc93c130ba","fromNode":"c724f8ccd03b7ada","fromSide":"right","toNode":"19905b20469592aa","toSide":"left"},
+		{"id":"ed0454eb41e6e440","fromNode":"19905b20469592aa","fromSide":"right","toNode":"77f79cfde63759fd","toSide":"left"}
+	]
+}
